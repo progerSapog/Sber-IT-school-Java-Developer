@@ -1,6 +1,3 @@
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -10,13 +7,12 @@ import java.util.Scanner;
  * Реализация домашнего задания Sber ITSchool от 28.03.21
  *
  * Текст задания:
- *  На ввод подается n чисел не разделенных пробелом (строка вида 123235094659843).
- *  Вычислить k-тый символ строки. Целочисленный параметр k передается
- *  пользователем.
+ *  Написать программу, выполняющую рисование рамки вокруг текстовой строки.
+ *  Программа должна принимать на вход размеры рамки (длина/ширина) и саму строку.
  *
- *  Входные данные: <[min/max]> <1,2, ..., n>.
- *  Выходные данные: в зависимости от первого параметра min/max вывести в
- *  терминал минимальное/максимальное число.
+ *  Текстовая строка должна быть отцентрирована как по по горизонатли, так и по вертикали.
+ *  В случае, если длина строки не позволяет вписать строку в рамку заданного размера,
+ *  программа должна иметь рамки выводить сообщение.
  *
  * @release:     28.03.21
  * @last_update: 28.03.21
@@ -25,44 +21,85 @@ import java.util.Scanner;
  */
 public class Task2
 {
+    /**
+     * Метод, выводящий в консоль текст с рамкой заданных парамтров
+     *
+     * @param length - длина  рамки
+     * @param width  - ширина рамки
+     * @param str    - текст для вывода
+     * */
+    public static void printWordInFrame(int length, int width, String str)
+    {
+        //Получаем кол-во пробелов перед строкой
+        int space1 = (width - str.length())/2;
+
+        //Проход по каждой строке
+        for (int i = 0; i <= length; i++)
+        {
+            //Если строка является первой или последней, то она состоит
+            //полностью из "*"
+            if (i == 0 || i == length)
+            {
+                for (int j = 0; j < width; j++)
+                {
+                    System.out.print("*");
+                }
+                System.out.println();
+                continue;
+            }
+
+            //В остальны случаях выводим "*" + кол-во проеблов до строки + строку +
+            //+ кол-во пробелов после строки + "*"
+            System.out.print("*");
+            for (int j = 0; j < space1; j++)
+            {
+                System.out.print(" ");
+            }
+            System.out.print(str);
+            for (int j = space1 + str.length(); j < width - 2; j++)
+            {
+                System.out.print(" ");
+            }
+            System.out.println("*");
+        }
+    }
+
     public static void main(String[] args)
     {
+        //Открытие потока ввода
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Введите max/min для нахождения max/min элемента: ");
-        String minMax = scanner.nextLine();
+        //Ввод длины
+        System.out.print("Введите длину рамки: ");
+        int length = scanner.nextInt();
 
-        System.out.print("Введите строку из n целых числе без пробела: ");
+        //Ввод ширины
+        System.out.print("Введите ширину рамки: ");
+        int width  = scanner.nextInt();
+
+        //Сброс потока ввода
+        scanner.nextLine();
+
+        //Ввод строки
+        System.out.print("Введите строку: ");
         String str = scanner.nextLine();
 
-        int minMaxInt = 0;
-
-        //Переводим строку в массив символов char
-        char[] charArr = str.toCharArray();
-
-        //Из массива типа char переводим в массив Integer
-        Integer[]  intArr  = new Integer[charArr.length];
-        for (int i = 0; i < intArr.length; i++)
+        //Если переданная строка не вмещается в рамку, то сообщаем об этом
+        if (str.length() > width)
         {
-            intArr[i] = Integer.parseInt(String.valueOf(charArr[i]));
+            System.out.println("Ошибка!!! Ширина рамки меньше длины строки.");
+            System.exit(1);
+        }
+        //Если переданны неверные параметры рамик, то сообщаем об этом
+        if ((width < 2) || (length < 2))
+        {
+            System.out.println("Ошибка!!! Неверные параметры рамки!");
+            System.exit(1);
         }
 
-        //Переводим массив int в список, чтобы воспользоваться
-        //средствами стан дартной библиотеки Collections.max/min
-        List<Integer> intList = Arrays.asList(intArr);
-        switch (minMax)
-        {
-            case ("max") -> minMaxInt = Collections.max(intList);
-            case ("min") -> minMaxInt = Collections.min(intList);
-            default      -> System.err.println("переданы неверные параметры!");
-        }
+        //Печать строки с рамкой
+        printWordInFrame(length, width, str);
 
-        System.out.println("Искомый элемент (max/min): " + minMaxInt);
-
-        System.out.print("Введите K (номер элемента, который вы хотите найти): ");
-        int k = scanner.nextInt();
-
-        System.out.println("Искомый элемент: " + intArr[k - 1]);
         System.out.println("Завершение работы...");
     }
 }
