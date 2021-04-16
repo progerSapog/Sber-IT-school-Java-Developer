@@ -1,0 +1,10 @@
+2021-04-15 08:28:19.871 [main] INFO  homework.sber_it_school.App - Старт работы.
+2021-04-15 08:28:19.891 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Попытка прочтение файла.
+2021-04-15 08:28:19.908 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Удачное прочтение файла.
+2021-04-15 08:28:19.909 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Создание файла: students_with_done_task.txt
+2021-04-15 08:28:19.934 [main] INFO  homework.sber_it_school.App - Завершение работы.
+2021-04-15 08:30:19.900 [main] INFO  homework.sber_it_school.App - Старт работы.
+2021-04-15 08:30:19.906 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Попытка прочтение файла.
+2021-04-15 08:30:19.913 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Удачное прочтение файла.
+2021-04-15 08:30:19.913 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Создание файла: students_with_done_task.txt
+2021-04-15 08:30:19.925 [main] INFO  homework.sber_it_school.App - Завершение работы.

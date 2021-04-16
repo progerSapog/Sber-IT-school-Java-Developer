@@ -1,0 +1,43 @@
+2021-04-14 18:41:39.581 [main] INFO  homework.sber_it_school.App - Старт работы.
+2021-04-14 18:41:39.586 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Попытка прочтение файла.
+2021-04-14 18:41:39.591 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Удачное прочтение файла.
+2021-04-14 18:41:39.591 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Создание файла: students_with_done_task.txt
+2021-04-14 18:41:39.601 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Создание файла: ИМЯ_ФАЙЛА1.log
+2021-04-14 18:41:39.601 [main] INFO  homework.sber_it_school.App - Завершение работы.
+2021-04-14 18:42:10.440 [main] INFO  homework.sber_it_school.App - Старт работы.
+2021-04-14 18:42:10.444 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Попытка прочтение файла.
+2021-04-14 18:42:10.449 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Удачное прочтение файла.
+2021-04-14 18:42:10.450 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Создание файла: students_with_done_task.txt
+2021-04-14 18:42:10.458 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Создание файла: ИМЯ_ФАЙЛА1.log
+2021-04-14 18:42:10.459 [main] INFO  homework.sber_it_school.App - Завершение работы.
+2021-04-14 18:43:19.290 [main] INFO  homework.sber_it_school.App - Старт работы.
+2021-04-14 18:43:19.296 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Попытка прочтение файла.
+2021-04-14 18:43:19.301 [main] ERROR homework.sber_it_school.App - Ошибка при открытии файла: logs to read
+2021-04-14 18:43:28.510 [main] INFO  homework.sber_it_school.App - Старт работы.
+2021-04-14 18:43:28.516 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Попытка прочтение файла.
+2021-04-14 18:43:28.521 [main] ERROR homework.sber_it_school.App - Ошибка при открытии файла: logs to read
+2021-04-14 18:44:20.307 [main] INFO  homework.sber_it_school.App - Старт работы.
+2021-04-14 18:44:20.312 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Попытка прочтение файла.
+2021-04-14 18:44:20.320 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Удачное прочтение файла.
+2021-04-14 18:44:20.321 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Создание файла: students_with_done_task.txt
+2021-04-14 18:44:20.330 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Создание файла: ИМЯ_ФАЙЛА1.log
+2021-04-14 18:44:20.330 [main] INFO  homework.sber_it_school.App - Завершение работы.
+2021-04-14 18:45:33.721 [main] INFO  homework.sber_it_school.App - Старт работы.
+2021-04-14 18:45:33.725 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Попытка прочтение файла.
+2021-04-14 18:45:33.733 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Удачное прочтение файла.
+2021-04-14 18:45:33.734 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Создание файла: students_with_done_task.txt
+2021-04-14 18:45:33.744 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Создание файла: ИМЯ_ФАЙЛА1.log
+2021-04-14 18:45:33.744 [main] INFO  homework.sber_it_school.App - Завершение работы.
+2021-04-14 18:46:06.618 [main] INFO  homework.sber_it_school.App - Старт работы.
+2021-04-14 18:46:06.622 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Попытка прочтение файла.
+2021-04-14 18:46:06.629 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Удачное прочтение файла.
+2021-04-14 18:46:06.630 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Создание файла: students_with_done_task.txt
+2021-04-14 18:46:06.637 [main] INFO  homework.sber_it_school.App - Завершение работы.
+2021-04-14 19:00:32.927 [main] INFO  homework.sber_it_school.App - Старт работы.
+2021-04-14 19:00:32.931 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Попытка прочтение файла.
+2021-04-14 19:00:32.932 [main] ERROR homework.sber_it_school.App - Ошибка при открытии файла: logs_to_read
+2021-04-14 19:01:12.426 [main] INFO  homework.sber_it_school.App - Старт работы.
+2021-04-14 19:01:12.432 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Попытка прочтение файла.
+2021-04-14 19:01:12.456 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Удачное прочтение файла.
+2021-04-14 19:01:12.457 [main] DEBUG homework.sber_it_school.log_parser.LogParser - Создание файла: students_with_done_task.txt
+2021-04-14 19:01:12.466 [main] INFO  homework.sber_it_school.App - Завершение работы.
